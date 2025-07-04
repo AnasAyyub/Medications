@@ -1,0 +1,26 @@
+CREATE table medications(
+	id SERIAL PRIMARY KEY
+    );
+    
+create table medication_class(
+	id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    medication_id int references medications(id)
+	);
+    
+create table drugs(
+	id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    dose varchar(100),
+    strength varchar(100),
+    medication_class_id int references medication_class(id)
+    );
+    
+insert into medication (id) values (1);
+
+insert into medication_class(class_name,medication_id,id) values ("Antibiotics",1,1); 
+insert into medication_class(class_name,medication_id,id) values ("Analgesic",1,2); 
+
+insert into drug (name,dose,strength,medication_class_id,id) values ("Amoxicillin","","500mg",1,1);
+insert into drug (name,dose,strength,medication_class_id,id) values ("Azithromycin","","500mg",1,2);
+insert into drug (name,dose,strength,medication_class_id,id) values ("Paracetamol","","500mg",2,3);

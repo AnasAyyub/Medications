@@ -1,0 +1,33 @@
+API call:-
+../medications/{id}
+
+Returning JSON:-
+{
+    "medicationClassList": [
+        {
+            "className": "Antibiotics",
+            "drugs": [
+                {
+                    "name": "Amoxicillin",
+                    "dose": "",
+                    "strength": "500mg"
+                },
+                {
+                    "name": "Azithromycin",
+                    "dose": "",
+                    "strength": "500mg"
+                }
+            ]
+        },
+        {
+            "className": "Analgesic",
+            "drugs": [
+                {
+                    "name": "Paracetamol",
+                    "dose": "",
+                    "strength": "500mg"
+                }
+            ]
+        }
+    ]
+}

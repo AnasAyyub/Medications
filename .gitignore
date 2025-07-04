@@ -1,0 +1,50 @@
+# === Java ===
+*.class
+*.jar
+*.war
+*.ear
+
+# === Maven ===
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+
+# === Logs ===
+*.log
+logs/
+*.out
+
+# === Spring Boot ===
+# Ignore application secrets
+application.properties
+application.yml
+
+# === IntelliJ IDEA ===
+.idea/
+*.iml
+*.iws
+out/
+
+# === Eclipse ===
+.project
+.classpath
+.settings/
+bin/
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+
+# === Build Tools ===
+.gradle/
+build/
+
+# === Temporary Files ===
+*.tmp
+*.bak
+*.swp
+*~
+
+# === Test Reports ===
+test-output/
+surefire-reports/
